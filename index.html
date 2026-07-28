@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="LuxeTime - Timeless Luxury, Crafted for Every Moment.">
-    <title>LuxeTime | Timeless Luxury</title>
+    <meta name="description" content="Bloom - Fresh & Beautiful, Crafted for Every Moment.">
+    <title>Bloom | Fresh & Beautiful</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,8 +17,8 @@
                         serif: ['Playfair Display', 'serif'],
                     },
                     colors: {
-                        primary: '#050505',   // Deep Black
-                        secondary: '#D4AF37', // Royal Gold
+                        primary: '#000000',   // Deep Black
+                        secondary: '#EC4899', // Royal Gold
                         cream: '#F9F6F0',     // Light mode background
                         accent: '#111111',    // Slightly lighter black for cards
                     },
@@ -127,8 +127,8 @@
             letter-spacing: 0.05em;
         }
         
-        .nav-link:hover { color: #D4AF37; }
-        .nav-link.active { color: #D4AF37; font-weight: 700; }
+        .nav-link:hover { color: var(--text-heading); }
+        .nav-link.active { color: var(--text-heading); font-weight: 700; }
         
         /* Dropdowns */
         .dropdown { position: relative; }
@@ -155,7 +155,7 @@
             display: block; padding: 12px 20px; color: var(--text-heading);
             transition: all 0.3s ease; border-bottom: 1px solid var(--border-color); font-size: 0.85rem; text-transform: uppercase;
         }
-        .dropdown-item:hover { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; padding-left: 25px; }
+        .dropdown-item:hover { background-color: rgba(236, 72, 153, 0.1); color: var(--text-heading); padding-left: 25px; }
         .dropdown-arrow { font-size: 0.7rem; transition: transform 0.3s ease; }
         .dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
         
@@ -171,19 +171,19 @@
             padding-left: 20px; border-radius: 4px;
         }
         .mobile-dropdown-content a { color: var(--text-main); } 
-        .mobile-dropdown-content a:hover { color: #D4AF37; }
+        .mobile-dropdown-content a:hover { color: var(--text-heading); }
         .mobile-dropdown-content.active { max-height: 500px; margin: 5px 0; }
 
         /* Generic Cards */
         .hover-card { transition: all 0.4s ease; border: 1px solid var(--border-color); }
         .hover-card:hover {
             transform: translateY(-8px);
-            border-color: #D4AF37 !important;
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
+            border-color: var(--text-heading) !important;
+            box-shadow: 0 15px 30px rgba(236, 72, 153, 0.15);
         }
         
         .gold-gradient-text {
-            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            background: linear-gradient(to right, #EC4899, #F9A8D4, #DB2777, #FBCFE8, #BE185D);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -212,8 +212,8 @@
                 <div class="flex items-center justify-between">
                     
                     <a href="index.html" class="flex items-center gap-2 no-underline transition-transform duration-300 hover:scale-105 group">
-                        <i class="fas fa-gem text-secondary text-2xl"></i>
-                        <div class="text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase">Luxe<span class="text-secondary">Time</span></div>
+                        <i class="fas fa-seedling text-secondary text-2xl"></i>
+                        <div class="text-xl sm:text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase truncate">Bloom</div>
                     </a>
                     
                     <div class="desktop-nav items-center space-x-2 xl:space-x-4">
@@ -227,11 +227,11 @@
                             </div>
                         </div>
                         <a href="about.html" class="nav-link">About</a>
-                        <a href="Watches.html" class="nav-link">Watches</a>
-                        <a href="Jewellery.html" class="nav-link">Jewellery</a>
-                        <a href="Product.html" class="nav-link">Product</a>
-                        <a href="Gifting.html" class="nav-link">Gifting</a>
-                        <a href="New Arrivals.html" class="nav-link">New Arrivals</a>
+                        <a href="Bouquets.html" class="nav-link">Bouquets</a>
+                        <a href="Occasions.html" class="nav-link">Occasions</a>
+                        <a href="Seasonal.html" class="nav-link">Seasonal</a>
+                        <a href="Gifts.html" class="nav-link">Gifts</a>
+                        <a href="Delivery.html" class="nav-link">Delivery Info</a>
                         <a href="Pricing.html" class="nav-link">Pricing</a>
                         <a href="contact.html" class="nav-link">Contact</a>
                     </div>
@@ -262,10 +262,10 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[9999] overflow-y-auto">
             <div class="p-6">
-                <div class="flex flex-wrap justify-between items-center mb-8 gap-3">
+                <div class="flex flex-nowrap justify-between items-center mb-8 gap-2 overflow-hidden">
                     <a href="index.html" class="flex items-center gap-2 group">
-                        <i class="fas fa-gem text-secondary text-2xl"></i>
-                        <div class="text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase">Luxe<span class="text-secondary">Time</span></div>
+                        <i class="fas fa-seedling text-secondary text-2xl"></i>
+                        <div class="text-xl sm:text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase truncate">Bloom</div>
                     </a>
                     
                     <div class="flex items-center gap-3">
@@ -293,11 +293,11 @@
                         </div>
                     </div>
                     <a href="about.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>About</span></a>
-                    <a href="Watches.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Watches</span></a>
-                    <a href="Jewellery.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Jewellery</span></a>
-                    <a href="Product.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Product</span></a>
-                    <a href="Gifting.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Gifting</span></a>
-                    <a href="New Arrivals.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>New Arrivals</span></a>
+                    <a href="Bouquets.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Bouquets</span></a>
+                    <a href="Occasions.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Occasions</span></a>
+                    <a href="Seasonal.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Seasonal</span></a>
+                    <a href="Gifts.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Gifts</span></a>
+                    <a href="Delivery.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Delivery Info</span></a>
                     <a href="Pricing.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Pricing</span></a>
                     <a href="contact.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Contact</span></a>
                     
@@ -316,27 +316,27 @@
         <main class="w-full flex-grow pt-[80px]">
             
             <!-- 1️⃣ Hero Section -->
-            <section class="h-[100vh] relative flex items-center justify-center overflow-hidden">
+            <section class="h-[calc(100vh-80px)] relative flex items-center justify-center overflow-hidden">
                 <div class="absolute inset-0 w-full h-full z-0">
                     <!-- High Resolution 4K background placeholder -->
-                    <img src="assets/images/premium/watch_hero_1.png" alt="Luxury Watch 4K" class="w-full h-full object-cover">
+                    <img src="assets/images/premium/bloom_hero.jpg" alt="Bloom Hero" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/60 z-10"></div>
                 </div>
                 
                 <div class="container mx-auto px-4 relative z-20 flex flex-col items-center text-center mt-10">
                     <div class="animate-fadeInUp w-full max-w-4xl flex flex-col items-center text-center opacity-0" style="animation-fill-mode: forwards;">
-                        <span class="text-secondary font-bold tracking-[0.3em] uppercase mb-6 block text-xs sm:text-sm w-full">Welcome to LuxeTime</span>
+                        <span class="text-secondary font-bold tracking-[0.3em] uppercase mb-6 block text-xs sm:text-sm w-full">Welcome to Bloom</span>
                         <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif mb-8 leading-tight text-white drop-shadow-2xl">
-                            Timeless Luxury,<br> <span class="gold-gradient-text italic">Crafted for Every Moment.</span>
+                            Fresh & Beautiful,<br> <span class="gold-gradient-text italic">Crafted for Every Moment.</span>
                         </h1>
                         <p class="text-lg sm:text-xl text-gray-300 font-light max-w-2xl mx-auto mb-10 drop-shadow-md">
                             Discover our exquisite collection of premium timepieces and bespoke fine jewelry, engineered for perfection and uncompromising elegance.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto justify-center">
-                            <a href="Watches.html" class="w-full sm:w-auto text-center bg-secondary text-white px-10 py-4 font-bold uppercase tracking-widest transition-all duration-300 hover:bg-white hover:text-black text-sm shadow-xl hover:shadow-2xl">
+                            <a href="Bouquets.html" class="w-full sm:w-auto text-center bg-secondary text-white px-10 py-4 font-bold uppercase tracking-widest transition-all duration-300 hover:bg-white hover:text-black text-sm shadow-xl hover:shadow-2xl">
                                 Shop Watches
                             </a>
-                            <a href="Jewellery.html" class="w-full sm:w-auto text-center bg-transparent backdrop-blur-sm text-white px-10 py-4 font-bold uppercase tracking-widest transition-all duration-300 border border-white hover:border-secondary hover:text-secondary text-sm">
+                            <a href="Occasions.html" class="w-full sm:w-auto text-center bg-transparent backdrop-blur-sm text-white px-10 py-4 font-bold uppercase tracking-widest transition-all duration-300 border border-white hover:border-secondary hover:text-secondary text-sm">
                                 Explore Jewellery
                             </a>
                         </div>
@@ -357,10 +357,10 @@
                         <!-- Card 1 -->
                         <div class="bg-card-theme p-4 relative group hover-card">
                             <div class="h-80 bg-accent mb-4 flex items-center justify-center relative overflow-hidden">
-                                <img src="assets/images/premium/showroom_hero.png" alt="Luxury Watches" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/premium/bloom_col1.jpg" alt="Fresh Bouquets" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
                             </div>
-                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Luxury Watches</h3>
+                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Fresh Bouquets</h3>
                             <div class="flex justify-center">
                                 <a href="#" class="text-xs text-secondary font-bold tracking-widest uppercase hover:text-heading-theme transition-colors">View Collection <i class="fas fa-angle-right ml-1"></i></a>
                             </div>
@@ -369,10 +369,10 @@
                         <!-- Card 2 -->
                         <div class="bg-card-theme p-4 relative group hover-card">
                             <div class="h-80 bg-accent mb-4 flex items-center justify-center relative overflow-hidden">
-                                <img src="assets/images/premium/jewellery_product_3.png" alt="Gold Jewellery" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/premium/bloom_col2.jpg" alt="Wedding Flowers" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
                             </div>
-                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Gold Jewellery</h3>
+                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Wedding Flowers</h3>
                             <div class="flex justify-center">
                                 <a href="#" class="text-xs text-secondary font-bold tracking-widest uppercase hover:text-heading-theme transition-colors">View Collection <i class="fas fa-angle-right ml-1"></i></a>
                             </div>
@@ -381,10 +381,10 @@
                         <!-- Card 3 -->
                         <div class="bg-card-theme p-4 relative group hover-card">
                             <div class="h-80 bg-accent mb-4 flex items-center justify-center relative overflow-hidden">
-                                <img src="assets/images/img-4.jpg" alt="Diamond Collection" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/premium/bloom_col3.jpg" alt="Anniversary Bouquets" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
                             </div>
-                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Diamond Collection</h3>
+                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Anniversary Bouquets</h3>
                             <div class="flex justify-center">
                                 <a href="#" class="text-xs text-secondary font-bold tracking-widest uppercase hover:text-heading-theme transition-colors">View Collection <i class="fas fa-angle-right ml-1"></i></a>
                             </div>
@@ -393,10 +393,10 @@
                         <!-- Card 4 -->
                         <div class="bg-card-theme p-4 relative group hover-card">
                             <div class="h-80 bg-accent mb-4 flex items-center justify-center relative overflow-hidden">
-                                <img src="assets/images/img-62.jpg" alt="Silver Collection" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/premium/bloom_col1.jpg" alt="Sympathy Flowers" class="h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
                             </div>
-                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Silver Collection</h3>
+                            <h3 class="text-xl font-serif text-heading-theme text-center uppercase tracking-wide mt-4 mb-2">Sympathy Flowers</h3>
                             <div class="flex justify-center">
                                 <a href="#" class="text-xs text-secondary font-bold tracking-widest uppercase hover:text-heading-theme transition-colors">View Collection <i class="fas fa-angle-right ml-1"></i></a>
                             </div>
@@ -413,23 +413,23 @@
                     </div>
                     <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
                         <!-- Using clean typography for logos to maintain luxury aesthetic -->
-                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Rolex</div>
-                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Titan</div>
-                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Casio</div>
-                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Seiko</div>
-                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Tissot</div>
-                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Citizen</div>
+                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Roses</div>
+                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Lilies</div>
+                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Tulips</div>
+                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Orchids</div>
+                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Daisies</div>
+                        <div class="text-2xl md:text-3xl font-serif font-bold text-heading-theme tracking-wider uppercase hover:text-secondary hover:opacity-100 transition-all cursor-pointer">Sunflowers</div>
                     </div>
                 </div>
             </section>
 
-            <!-- 4️⃣ Exclusive Gift Collection -->
+            <!-- 4️⃣ Bouquets by Occasion -->
             <section id="gifting" class="py-24 bg-theme-main">
                 <div class="container mx-auto px-4 lg:px-8">
                     <div class="flex flex-col lg:flex-row gap-12 items-center">
                         <div class="w-full lg:w-1/3 text-center lg:text-left">
-                            <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Perfect Present</span>
-                            <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-6">Exclusive Gift Collection</h2>
+                            <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Say It With Flowers</span>
+                            <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-6">Bouquets by Occasion</h2>
                             <p class="text-body-theme mb-8 leading-relaxed">
                                 Commemorate life's most precious milestones with timeless elegance. Our exclusive gifting collections are curated to leave a lasting impression.
                             </p>
@@ -441,7 +441,7 @@
                         <div class="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div class="bg-card-theme p-6 border border-theme hover-card flex items-center gap-6">
                                 <div class="w-16 h-16 bg-secondary/10 flex items-center justify-center rounded-full shrink-0">
-                                    <i class="fas fa-ring text-2xl text-secondary"></i>
+                                    <i class="fas fa-heart text-2xl text-secondary"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-serif text-xl text-heading-theme mb-1">Wedding Gifts</h4>
@@ -451,7 +451,7 @@
                             
                             <div class="bg-card-theme p-6 border border-theme hover-card flex items-center gap-6">
                                 <div class="w-16 h-16 bg-secondary/10 flex items-center justify-center rounded-full shrink-0">
-                                    <i class="fas fa-glass-cheers text-2xl text-secondary"></i>
+                                    <i class="fas fa-birthday-cake text-2xl text-secondary"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-serif text-xl text-heading-theme mb-1">Anniversary Gifts</h4>
@@ -488,8 +488,8 @@
                 <div class="absolute right-0 top-0 text-[300px] text-secondary opacity-5 select-none pointer-events-none font-serif">"</div>
                 <div class="container mx-auto px-4 lg:px-8 relative z-10">
                     <div class="flex flex-col items-center text-center w-full mb-16">
-                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Elegance Validated</span>
-                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Client Testimonials</h2>
+                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Smiles Delivered</span>
+                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Happy Customers</h2>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -513,7 +513,7 @@
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                             <p class="text-body-theme italic mb-6 leading-relaxed">
-                                "Acquiring my Rolex through LuxeTime was flawless. Their authentication process and dedicated service center gave me complete peace of mind."
+                                "Acquiring my Roses through Bloom was flawless. Their authentication process and dedicated service center gave me complete peace of mind."
                             </p>
                             <div class="mt-auto">
                                 <h4 class="font-serif text-heading-theme font-bold">Jonathan M.</h4>
@@ -527,7 +527,7 @@
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                             <p class="text-body-theme italic mb-6 leading-relaxed">
-                                "From engagement rings to anniversary bands, LuxeTime has been our family's trusted jeweler for a decade. Exceptional quality always."
+                                "From engagement rings to anniversary bands, Bloom has been our family's trusted jeweler for a decade. Exceptional quality always."
                             </p>
                             <div class="mt-auto">
                                 <h4 class="font-serif text-heading-theme font-bold">Sophia & James</h4>
@@ -538,15 +538,15 @@
                 </div>
             </section>
 
-            <!-- 6️⃣ Visit Our Showroom CTA -->
+            <!-- 6️⃣ Visit Our Shop CTA -->
             <section class="py-24 bg-black relative border-y border-secondary/30">
                 <div class="absolute inset-0 w-full h-full z-0 opacity-40">
-                    <img src="assets/images/img-6.jpg" alt="Luxury Showroom" class="w-full h-full object-cover">
+                    <img src="assets/images/premium/bloom_showroom.jpg" alt="Luxury Showroom" class="w-full h-full object-cover">
                 </div>
                 
                 <div class="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
                     <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-4 block text-xs">Experience Luxury</span>
-                    <h2 class="text-3xl md:text-5xl font-serif text-white mb-10">Visit Our Showroom</h2>
+                    <h2 class="text-3xl md:text-5xl font-serif text-white mb-10">Visit Our Shop</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl bg-primary/80 backdrop-blur-md border border-secondary/50 p-8 md:p-12">
                         <div class="text-left border-b md:border-b-0 md:border-r border-secondary/30 pb-6 md:pb-0 md:pr-8">
@@ -579,11 +579,11 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     <div>
                         <a href="index.html" class="flex items-center gap-2 mb-6">
-                            <i class="fas fa-gem text-secondary text-3xl"></i>
-                            <div class="text-2xl font-serif font-bold text-white tracking-wider uppercase">Luxe<span class="text-secondary">Time</span></div>
+                            <i class="fas fa-seedling text-secondary text-3xl"></i>
+                            <div class="text-2xl font-serif font-bold text-white tracking-wider uppercase">Bloom</div>
                         </a>
                         <p class="text-gray-400 mb-6 text-sm leading-relaxed font-light">
-                            Timeless Luxury, Crafted for Every Moment. Purveyors of fine watches and exquisite jewelry since 1995.
+                            Fresh & Beautiful, Crafted for Every Moment. Purveyors of fine watches and exquisite jewelry since 1995.
                         </p>
                         <div class="flex space-x-4">
                             <a href="#" class="w-10 h-10 border border-secondary/50 text-secondary flex items-center justify-center hover:bg-secondary hover:text-black transition-all"><i class="fab fa-instagram"></i></a>
@@ -626,7 +626,7 @@
                 
                 <div class="border-t border-secondary/20 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light tracking-wide">
                     <p class="mb-4 md:mb-0">
-                        &copy; 2026 LuxeTime. All rights reserved.
+                        &copy; 2026 Bloom. All rights reserved.
                     </p>
                     <div class="flex gap-6">
                         <a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a>
@@ -732,7 +732,7 @@
             if(window.innerWidth >= 1280) mobileMenu.classList.remove('active');
         });
 
-        // --- 4. SMOOTH SCROLL ANCHORS ---
+        // --- 4. SMOOTH SCROLL ANCHORS ---d
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');

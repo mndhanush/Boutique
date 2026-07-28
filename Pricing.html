@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="LuxeTime Pricing - Discover our exclusive collector's tiers, sourcing retainers, and bespoke service fees.">
-    <title>Pricing & Advisory | LuxeTime</title>
+    <meta name="description" content="Bloom Pricing - Discover our exclusive collector's tiers, sourcing retainers, and bespoke service fees.">
+    <title>Pricing & Advisory | Bloom</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,8 +17,8 @@
                         serif: ['Playfair Display', 'serif'],
                     },
                     colors: {
-                        primary: '#050505',   
-                        secondary: '#D4AF37', 
+                        primary: '#000000',   
+                        secondary: '#EC4899', 
                         cream: '#F9F6F0',     
                         accent: '#111111',    
                     },
@@ -125,8 +125,8 @@
             letter-spacing: 0.05em;
         }
         
-        .nav-link:hover { color: #D4AF37; }
-        .nav-link.active { color: #D4AF37; font-weight: 700; }
+        .nav-link:hover { color: var(--text-heading); }
+        .nav-link.active { color: var(--text-heading); font-weight: 700; }
         
         /* Dropdowns */
         .dropdown { position: relative; }
@@ -153,7 +153,7 @@
             display: block; padding: 12px 20px; color: var(--text-heading);
             transition: all 0.3s ease; border-bottom: 1px solid var(--border-color); font-size: 0.85rem; text-transform: uppercase;
         }
-        .dropdown-item:hover { background-color: rgba(212, 175, 55, 0.1); color: #D4AF37; padding-left: 25px; }
+        .dropdown-item:hover { background-color: rgba(236, 72, 153, 0.1); color: var(--text-heading); padding-left: 25px; }
         .dropdown-arrow { font-size: 0.7rem; transition: transform 0.3s ease; }
         .dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
         
@@ -169,19 +169,19 @@
             padding-left: 20px; border-radius: 4px;
         }
         .mobile-dropdown-content a { color: var(--text-main); } 
-        .mobile-dropdown-content a:hover { color: #D4AF37; }
+        .mobile-dropdown-content a:hover { color: var(--text-heading); }
         .mobile-dropdown-content.active { max-height: 500px; margin: 5px 0; }
 
         /* Generic Cards */
         .hover-card { transition: all 0.4s ease; border: 1px solid var(--border-color); }
         .hover-card:hover {
             transform: translateY(-8px);
-            border-color: #D4AF37 !important;
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
+            border-color: var(--text-heading) !important;
+            box-shadow: 0 15px 30px rgba(236, 72, 153, 0.15);
         }
         
         .gold-gradient-text {
-            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            background: linear-gradient(to right, #EC4899, #F9A8D4, #DB2777, #FBCFE8, #BE185D);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -198,7 +198,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #D4AF37;
+            background-color: var(--text-heading);
             color: #000;
             font-size: 0.65rem;
             font-weight: 800;
@@ -231,8 +231,8 @@
                 <div class="flex items-center justify-between">
                     
                     <a href="index.html" class="flex items-center gap-2 no-underline transition-transform duration-300 hover:scale-105 group">
-                        <i class="fas fa-gem text-secondary text-2xl"></i>
-                        <div class="text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase">Luxe<span class="text-secondary">Time</span></div>
+                        <i class="fas fa-seedling text-secondary text-2xl"></i>
+                        <div class="text-xl sm:text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase truncate">Bloom</div>
                     </a>
                     
                     <div class="desktop-nav items-center space-x-2 xl:space-x-4">
@@ -246,11 +246,11 @@
                             </div>
                         </div>
                         <a href="about.html" class="nav-link">About</a>
-                        <a href="Watches.html" class="nav-link">Watches</a>
-                        <a href="Jewellery.html" class="nav-link">Jewellery</a>
-                        <a href="Product.html" class="nav-link">Product</a>
-                        <a href="Gifting.html" class="nav-link">Gifting</a>
-                        <a href="New Arrivals.html" class="nav-link">New Arrivals</a>
+                        <a href="Bouquets.html" class="nav-link">Bouquets</a>
+                        <a href="Occasions.html" class="nav-link">Occasions</a>
+                        <a href="Seasonal.html" class="nav-link">Seasonal</a>
+                        <a href="Gifts.html" class="nav-link">Gifts</a>
+                        <a href="Delivery.html" class="nav-link">Delivery Info</a>
                         <a href="Pricing.html" class="nav-link active">Pricing</a>
                         <a href="contact.html" class="nav-link">Contact</a>
                     </div>
@@ -281,10 +281,10 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[9999] overflow-y-auto">
             <div class="p-6">
-                <div class="flex flex-wrap justify-between items-center mb-8 gap-3">
+                <div class="flex flex-nowrap justify-between items-center mb-8 gap-2 overflow-hidden">
                     <a href="index.html" class="flex items-center gap-2 group">
-                        <i class="fas fa-gem text-secondary text-2xl"></i>
-                        <div class="text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase">Luxe<span class="text-secondary">Time</span></div>
+                        <i class="fas fa-seedling text-secondary text-2xl"></i>
+                        <div class="text-xl sm:text-2xl font-serif font-bold text-heading-theme tracking-wider uppercase truncate">Bloom</div>
                     </a>
                     
                     <div class="flex items-center gap-3">
@@ -312,11 +312,11 @@
                         </div>
                     </div>
                     <a href="about.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>About</span></a>
-                    <a href="Watches.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Watches</span></a>
-                    <a href="Jewellery.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Jewellery</span></a>
-                    <a href="Product.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Product</span></a>
-                    <a href="Gifting.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Gifting</span></a>
-                    <a href="New Arrivals.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>New Arrivals</span></a>
+                    <a href="Bouquets.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Bouquets</span></a>
+                    <a href="Occasions.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Occasions</span></a>
+                    <a href="Seasonal.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Seasonal</span></a>
+                    <a href="Gifts.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Gifts</span></a>
+                    <a href="Delivery.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Delivery Info</span></a>
                     <a href="Pricing.html" class="flex items-center justify-between w-full text-secondary text-sm uppercase tracking-wide font-bold py-4 no-underline border-b border-theme"><span>Pricing</span></a>
                     <a href="contact.html" class="flex items-center justify-between w-full text-heading-theme text-sm uppercase tracking-wide font-medium py-4 no-underline border-b border-theme"><span>Contact</span></a>
                     
@@ -533,7 +533,7 @@
             <section class="py-24 bg-theme-main">
                 <div class="container mx-auto px-4 lg:px-8">
                     <div class="text-center mb-16">
-                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The LuxeTime Promise</span>
+                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Bloom Promise</span>
                         <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Trust & Transparency</h2>
                     </div>
 
@@ -640,11 +640,11 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     <div>
                         <a href="index.html" class="flex items-center gap-2 mb-6">
-                            <i class="fas fa-gem text-secondary text-3xl"></i>
-                            <div class="text-2xl font-serif font-bold text-white tracking-wider uppercase">Luxe<span class="text-secondary">Time</span></div>
+                            <i class="fas fa-seedling text-secondary text-3xl"></i>
+                            <div class="text-2xl font-serif font-bold text-white tracking-wider uppercase">Bloom</div>
                         </a>
                         <p class="text-gray-400 mb-6 text-sm leading-relaxed font-light">
-                            Timeless Luxury, Crafted for Every Moment. Purveyors of fine watches and exquisite jewelry since 1995.
+                            Fresh & Beautiful, Crafted for Every Moment. Purveyors of fine watches and exquisite jewelry since 1995.
                         </p>
                         <div class="flex space-x-4">
                             <a href="#" class="w-10 h-10 border border-secondary/50 text-secondary flex items-center justify-center hover:bg-secondary hover:text-black transition-all"><i class="fab fa-instagram"></i></a>
@@ -657,7 +657,7 @@
                         <h3 class="text-lg font-serif text-white mb-6 uppercase tracking-wider">Quick Links</h3>
                         <ul class="space-y-3 text-sm font-light">
                             <li><a href="about.html" class="text-gray-400 hover:text-secondary transition-colors">About Us</a></li>
-                            <li><a href="Watches.html" class="text-gray-400 hover:text-secondary transition-colors">Watches</a></li>
+                            <li><a href="Bouquets.html" class="text-gray-400 hover:text-secondary transition-colors">Bouquets</a></li>
                             <li></li>
                             <li><a href="Pricing.html" class="text-secondary transition-colors font-bold">Pricing & Advisory</a></li>
                         </ul>
@@ -687,7 +687,7 @@
                 
                 <div class="border-t border-secondary/20 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light tracking-wide">
                     <p class="mb-4 md:mb-0">
-                        &copy; 2026 LuxeTime. All rights reserved.
+                        &copy; 2026 Bloom. All rights reserved.
                     </p>
                     <div class="flex gap-6">
                         <a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a>
