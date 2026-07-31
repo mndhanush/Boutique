@@ -126,7 +126,7 @@
         }
         
         .nav-link:hover { color: var(--text-heading); }
-        .nav-link.active { color: var(--text-heading); font-weight: 700; }
+        .nav-link.active { color: #EC4899 !important; font-weight: 700; }
         
         /* Dropdowns */
         .dropdown { position: relative; }
@@ -189,7 +189,7 @@
 
         .filter-btn.active {
             background-color: var(--text-heading);
-            color: #000;
+            color: var(--bg-color);
             border-color: var(--text-heading);
         }
 
@@ -319,21 +319,21 @@
 
         <main class="w-full flex-grow pt-[72px] lg:pt-[80px]">
             
-            <!-- 1️⃣ Hero Section: Masterpieces of Horology -->
+            <!-- 1️⃣ Hero Section: Masterpieces of Floristry -->
             <section class="h-[100vh] md:h-[100vh] relative flex items-center justify-center overflow-hidden border-b border-theme">
                 <div class="absolute inset-0 w-full h-full z-0">
-                    <img src="assets/images/premium/watch_hero_2.png" alt="Macro Watch Face" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black/70 z-10"></div>
+                    <img src="assets/images/bouquets_hero.jpg" alt="Luxury Bouquets" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 z-10"></div>
                 </div>
                 
                 <div class="container mx-auto px-4 relative z-20 flex flex-col items-center text-center">
                     <div class="animate-fadeInUp w-full max-w-4xl flex flex-col items-center text-center opacity-0" style="animation-fill-mode: forwards;">
-                        <span class="text-secondary font-bold tracking-[0.3em] uppercase mb-6 block text-xs sm:text-sm">The Pinnacle of Time</span>
+                        <span class="text-secondary font-bold tracking-[0.3em] uppercase mb-6 block text-xs sm:text-sm">The Pinnacle of Nature</span>
                         <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif mb-6 leading-tight text-white drop-shadow-2xl">
-                            Masterpieces of <span class="gold-gradient-text italic">Horology</span>
+                            Masterpieces of <span class="gold-gradient-text italic">Floristry</span>
                         </h1>
                         <p class="text-lg text-gray-300 font-light max-w-2xl mx-auto drop-shadow-md leading-relaxed">
-                            Discover our curated selection of automatic chronographs, tourbillons, and rare dive watches engineered by the world's most prestigious maisons.
+                            Discover our curated selection of breathtaking bespoke bouquets, exotic orchids, and seasonal wildflowers crafted by the world's most prestigious artisans.
                         </p>
                     </div>
                 </div>
@@ -349,11 +349,11 @@
 
                     <!-- Filter Bar -->
                     <div class="flex flex-wrap justify-center gap-4 mb-16">
-                        <button class="filter-btn active px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-bold transition-all hover:border-secondary">All Models</button>
-                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Automatic</button>
-                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Chronograph</button>
-                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Dive</button>
-                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Dress</button>
+                        <button class="filter-btn active px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-bold transition-all hover:border-secondary">All Arrangements</button>
+                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Romantic</button>
+                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Sympathy</button>
+                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Celebration</button>
+                        <button class="filter-btn px-6 py-2 border border-theme text-heading-theme text-sm uppercase tracking-wider font-medium transition-all hover:border-secondary hover:text-secondary">Dried</button>
                     </div>
 
                     <!-- Watch Grid -->
@@ -362,16 +362,16 @@
                         <!-- Watch 1 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-72 bg-accent overflow-hidden p-6 flex items-center justify-center">
-                                <img src="assets/images/img-56.jpg" alt="Chronograph" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/bouquet_grid_1.jpg" alt="Classic Red Roses" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Apex Chronograph</h3>
-                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">42mm • Rose Gold</p>
+                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Crimson Romance</h3>
+                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">Premium Red Roses</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4">$32,500</p>
+                                    <p class="text-secondary font-bold mb-4">$150</p>
                                     <button class="w-full bg-transparent border border-secondary text-heading-theme hover:bg-secondary hover:text-black py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300">
                                         View Details
                                     </button>
@@ -382,16 +382,16 @@
                         <!-- Watch 2 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-72 bg-accent overflow-hidden p-6 flex items-center justify-center">
-                                <img src="assets/images/img-70.jpg" alt="Dress Watch" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/bouquet_grid_2.jpg" alt="Blush Peonies" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Elegance Ultra-Thin</h3>
-                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">39mm • White Gold</p>
+                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Blush Elegance</h3>
+                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">Peonies & Ranunculus</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4">$18,900</p>
+                                    <p class="text-secondary font-bold mb-4">$185</p>
                                     <button class="w-full bg-transparent border border-secondary text-heading-theme hover:bg-secondary hover:text-black py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300">
                                         View Details
                                     </button>
@@ -402,17 +402,17 @@
                         <!-- Watch 3 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-72 bg-accent overflow-hidden p-6 flex items-center justify-center">
-                                <div class="absolute top-4 left-4 bg-primary text-secondary border border-secondary text-[10px] uppercase font-bold tracking-widest px-3 py-1 z-10">Waitlist</div>
-                                <img src="assets/images/img-46.jpg" alt="Dive Watch" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <div class="absolute top-4 left-4 bg-primary text-secondary border border-secondary text-[10px] uppercase font-bold tracking-widest px-3 py-1 z-10">Popular</div>
+                                <img src="assets/images/bouquet_grid_3.jpg" alt="White Orchids" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Ocean Master 300</h3>
-                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">41mm • Steel</p>
+                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Pristine Orchids</h3>
+                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">White Phalaenopsis</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4">$10,200</p>
+                                    <p class="text-secondary font-bold mb-4">$220</p>
                                     <button class="w-full bg-transparent border border-secondary text-heading-theme hover:bg-secondary hover:text-black py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300">
                                         View Details
                                     </button>
@@ -423,16 +423,16 @@
                         <!-- Watch 4 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-72 bg-accent overflow-hidden p-6 flex items-center justify-center">
-                                <img src="assets/images/img-51.jpg" alt="Pilot Watch" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/bouquet_grid_4.jpg" alt="Wildflower Mix" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Aero Commander</h3>
-                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">43mm • Liliesium</p>
+                                    <h3 class="font-serif text-lg text-heading-theme mb-1">Meadow Dream</h3>
+                                    <p class="text-xs text-body-theme uppercase tracking-widest mb-3">Seasonal Wildflowers</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4">$14,500</p>
+                                    <p class="text-secondary font-bold mb-4">$110</p>
                                     <button class="w-full bg-transparent border border-secondary text-heading-theme hover:bg-secondary hover:text-black py-2 text-xs font-bold uppercase tracking-wider transition-all duration-300">
                                         View Details
                                     </button>
@@ -444,60 +444,60 @@
                     
                     <div class="text-center mt-12">
                         <a href="#" class="inline-block bg-heading-theme text-bg-theme px-8 py-3 uppercase tracking-widest text-xs font-bold hover:bg-secondary hover:text-black transition-all shadow-lg">
-                            Load More Pieces
+                            Load More Bouquets
                         </a>
                     </div>
                 </div>
             </section>
 
-            <!-- 3️⃣ Master Complications -->
+            <!-- 3️⃣ Signature Collections -->
             <section class="py-24 bg-theme-alt border-y border-theme">
                 <div class="container mx-auto px-4 lg:px-8">
                     <div class="text-center mb-16">
-                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Anatomy of Time</span>
-                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Master Complications</h2>
-                        <p class="text-body-theme mt-4 max-w-2xl mx-auto">Beyond telling time, mechanical complications represent the apex of horological engineering and artistic ambition.</p>
+                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Art of Design</span>
+                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Signature Collections</h2>
+                        <p class="text-body-theme mt-4 max-w-2xl mx-auto">Beyond simple bouquets, our signature collections represent the apex of floral artistry and natural ambition.</p>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
-                        <!-- Complication 1 -->
+                        <!-- Collection 1 -->
                         <div class="bg-card-theme border border-theme overflow-hidden group hover-card">
                             <div class="h-64 overflow-hidden relative">
-                                <img src="assets/images/premium/service_product_1.png" alt="Tourbillon" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/sig_grandeur.jpg" alt="The Grandeur" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                                <h3 class="absolute bottom-4 left-6 text-2xl font-serif text-white">The Tourbillon</h3>
+                                <h3 class="absolute bottom-4 left-6 text-2xl font-serif text-white">The Grandeur</h3>
                             </div>
                             <div class="p-6">
                                 <p class="text-body-theme text-sm leading-relaxed mb-4">
-                                    Invented to counter the effects of gravity, the tourbillon houses the escapement and balance wheel in a rotating cage, ensuring impeccable chronometric precision.
+                                    Designed to make an unforgettable statement, The Grandeur collection features towering stems and voluminous blooms that command the room with impeccable elegance.
                                 </p>
                             </div>
                         </div>
 
-                        <!-- Complication 2 -->
+                        <!-- Collection 2 -->
                         <div class="bg-card-theme border border-theme overflow-hidden group hover-card">
                             <div class="h-64 overflow-hidden relative">
-                                <img src="assets/images/premium/bloom_col2.jpg" alt="Perpetual Calendar" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/sig_eternal_love.jpg" alt="Eternal Love" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                                <h3 class="absolute bottom-4 left-6 text-2xl font-serif text-white">Perpetual Calendar</h3>
+                                <h3 class="absolute bottom-4 left-6 text-2xl font-serif text-white">Eternal Love</h3>
                             </div>
                             <div class="p-6">
                                 <p class="text-body-theme text-sm leading-relaxed mb-4">
-                                    A mechanical marvel that automatically adjusts for the varying lengths of months and leap years, requiring no manual correction until the year 2100.
+                                    A romantic marvel that pairs deeply colored, velvety petals with delicate trailing greenery, symbolizing passion and enduring affection.
                                 </p>
                             </div>
                         </div>
 
-                        <!-- Complication 3 -->
+                        <!-- Collection 3 -->
                         <div class="bg-card-theme border border-theme overflow-hidden group hover-card">
                             <div class="h-64 overflow-hidden relative">
-                                <img src="assets/images/img-5.jpg" alt="Minute Repeater" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/sig_minimalist.jpg" alt="Modern Minimalist" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                                <h3 class="absolute bottom-4 left-6 text-2xl font-serif text-white">Minute Repeater</h3>
+                                <h3 class="absolute bottom-4 left-6 text-2xl font-serif text-white">Modern Minimalist</h3>
                             </div>
                             <div class="p-6">
                                 <p class="text-body-theme text-sm leading-relaxed mb-4">
-                                    The pinnacle of acoustic engineering, chiming the hours, quarters, and minutes on demand using microscopic tuned gongs and hammers.
+                                    The pinnacle of architectural floral design, utilizing negative space and striking silhouettes to create breathtaking, contemporary art pieces.
                                 </p>
                             </div>
                         </div>
@@ -535,58 +535,58 @@
                 </div>
             </section>
 
-            <!-- 5️⃣ Certified Pre-Owned / Vintage -->
+            <!-- 5️⃣ Sustainable & Locally Sourced -->
             <section class="py-0 flex flex-col lg:flex-row bg-primary border-y border-theme">
                 <div class="w-full lg:w-1/2 h-[400px] lg:h-auto relative">
-                    <img src="assets/images/premium/watch_product_1.png" alt="Vintage Watch" class="w-full h-full object-cover">
+                    <img src="assets/images/sustainable_sourcing.jpg" alt="Sustainable Sourcing" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40"></div>
                 </div>
                 <div class="w-full lg:w-1/2 p-10 lg:p-20 flex flex-col justify-center bg-accent text-white">
-                    <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-4 block text-xs">Heirlooms Reborn</span>
-                    <h2 class="text-3xl md:text-5xl font-serif mb-6">Certified Pre-Owned & Vintage</h2>
+                    <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-4 block text-xs">Earth's Finest</span>
+                    <h2 class="text-3xl md:text-5xl font-serif mb-6">Sustainable & Locally Sourced</h2>
                     <p class="text-gray-300 mb-8 leading-relaxed">
-                        Explore horological history with our meticulously authenticated vintage collection. Every pre-owned timepiece undergoes a rigorous 50-point inspection by our master watchmakers, guaranteeing authenticity and performance. Backed by a 2-year Bloom warranty.
+                        Explore our eco-friendly collection with our meticulously cultivated vintage-style blooms. Every stem undergoes a rigorous inspection by our master florists, guaranteeing vibrancy and longevity. Backed by our freshness guarantee.
                     </p>
                     <ul class="space-y-4 mb-10 text-sm font-light text-gray-300">
-                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-3"></i> 100% Authenticity Guaranteed</li>
-                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-3"></i> Professionally Serviced & Polished</li>
-                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-3"></i> Original Box and Papers Included</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-3"></i> 100% Pesticide-Free Guaranteed</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-3"></i> Professionally Arranged & Hydrated</li>
+                        <li class="flex items-center"><i class="fas fa-check text-secondary mr-3"></i> Eco-Friendly Wrapping Included</li>
                     </ul>
-                    <a href="#vintage" class="inline-block bg-secondary text-black px-8 py-3 uppercase tracking-widest text-xs font-bold hover:bg-white transition-all w-max shadow-lg">
-                        Shop Vintage
+                    <a href="#sustainable" class="inline-block bg-secondary text-black px-8 py-3 uppercase tracking-widest text-xs font-bold hover:bg-white transition-all w-max shadow-lg">
+                        Shop Sustainable
                     </a>
                 </div>
             </section>
 
-            <!-- 6️⃣ Watch Care & Servicing CTA -->
+            <!-- 6️⃣ Flower Care & Subscriptions CTA -->
             <section class="py-24 bg-theme-alt relative overflow-hidden">
                 <!-- Background Decor -->
                 <div class="absolute -right-32 -bottom-32 text-theme-main opacity-20">
-                    <i class="fas fa-cog text-[400px] animate-spin-slow" style="animation-duration: 40s;"></i>
+                    <i class="fas fa-leaf text-[400px] animate-pulse" style="animation-duration: 10s;"></i>
                 </div>
                 
                 <div class="container mx-auto px-4 lg:px-8 relative z-10 flex flex-col items-center text-center">
-                    <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-6">Preserve Your Legacy</h2>
+                    <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-6">Preserve Your Blooms</h2>
                     <p class="text-body-theme max-w-2xl mx-auto mb-12 text-lg">
-                        A mechanical watch is a living machine. Regular maintenance is vital to ensure its longevity and accuracy for generations to come.
+                        A bouquet is a living masterpiece. Proper care is vital to ensure its longevity and vibrancy for as long as possible.
                     </p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
-                        <!-- Book Service -->
+                        <!-- Subscriptions -->
                         <div class="bg-card-theme p-8 border border-theme text-left hover-card">
-                            <i class="fas fa-tools text-3xl text-secondary mb-4"></i>
-                            <h3 class="text-xl font-serif text-heading-theme mb-2">Book a Service</h3>
-                            <p class="text-body-theme text-sm mb-6">Complete overhaul, water-resistance testing, and ultrasonic cleaning by certified horologists.</p>
+                            <i class="fas fa-calendar-alt text-3xl text-secondary mb-4"></i>
+                            <h3 class="text-xl font-serif text-heading-theme mb-2">Floral Subscriptions</h3>
+                            <p class="text-body-theme text-sm mb-6">Receive fresh, seasonal arrangements delivered to your door weekly or monthly by our dedicated team.</p>
                             <a href="contact.html" class="text-xs font-bold uppercase tracking-widest text-secondary hover:text-heading-theme transition-colors">
-                                Schedule Maintenance <i class="fas fa-arrow-right ml-1"></i>
+                                Subscribe Now <i class="fas fa-arrow-right ml-1"></i>
                             </a>
                         </div>
                         
-                        <!-- Watch Winders -->
+                        <!-- Vases and Care -->
                         <div class="bg-card-theme p-8 border border-theme text-left hover-card">
-                            <i class="fas fa-box-open text-3xl text-secondary mb-4"></i>
-                            <h3 class="text-xl font-serif text-heading-theme mb-2">Watch Winders & Cases</h3>
-                            <p class="text-body-theme text-sm mb-6">Keep your automatic movements perfectly calibrated with our premium selection of luxury winders.</p>
+                            <i class="fas fa-tint text-3xl text-secondary mb-4"></i>
+                            <h3 class="text-xl font-serif text-heading-theme mb-2">Vases & Care Tools</h3>
+                            <p class="text-body-theme text-sm mb-6">Keep your arrangements perfectly hydrated with our premium selection of luxury vases and care kits.</p>
                             <a href="#accessories" class="text-xs font-bold uppercase tracking-widest text-secondary hover:text-heading-theme transition-colors">
                                 Shop Accessories <i class="fas fa-arrow-right ml-1"></i>
                             </a>
@@ -789,3 +789,4 @@
     </script>
 </body>
 </html>
+

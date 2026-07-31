@@ -125,7 +125,7 @@
         }
         
         .nav-link:hover { color: var(--text-heading); }
-        .nav-link.active { color: var(--text-heading); font-weight: 700; }
+        .nav-link.active { color: #EC4899 !important; font-weight: 700; }
         
         .dropdown { position: relative; }
         .dropdown-menu {
@@ -312,7 +312,7 @@
             <!-- 1️⃣ Hero Section: Our Heritage -->
             <section class="h-[100vh] md:h-[100vh] relative flex items-center justify-center overflow-hidden">
                 <div class="absolute inset-0 w-full h-full z-0">
-                    <img src="assets/images/premium/bloom_hero.jpg" alt="Floral Heritage" class="w-full h-full object-cover">
+                    <img src="assets/images/floral_hero.jpg" alt="Floral Heritage" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/70 z-10"></div>
                 </div>
                 
@@ -334,8 +334,8 @@
                 <div class="container mx-auto px-4 lg:px-8">
                     <div class="flex flex-col lg:flex-row items-center gap-16">
                         <div class="w-full lg:w-1/2 relative group">
-                            <div class="absolute -inset-4 bg-secondary/10 transform rotate-2 transition-transform group-hover:rotate-1 duration-500"></div>
-                            <img src="assets/images/img-51.jpg" alt="Luxury Details" class="relative z-10 w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700 border border-theme shadow-2xl">
+                            <div class="absolute -inset-4 bg-secondary/10 transform rotate-2 transition-transform group-hover:rotate-1 duration-500 rounded-lg"></div>
+                            <img src="assets/images/floral_core_values.jpg" alt="Luxury Details" class="relative z-10 w-full h-[500px] object-cover hover:scale-105 transition-all duration-700 border border-secondary shadow-[0_20px_50px_rgba(236,72,153,0.2)] rounded-lg">
                         </div>
                         <div class="w-full lg:w-1/2">
                             <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Core Values</span>
@@ -393,127 +393,69 @@
                 </div>
             </section>
 
-            <!-- 4️⃣ Milestones / Journey -->
+            <!-- 4️⃣ Farm to Boutique -->
             <section class="py-24 bg-theme-main">
                 <div class="container mx-auto px-4 lg:px-8">
-                    <div class="flex flex-col items-center text-center w-full mb-16">
-                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Our Journey</span>
-                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Decades of Elegance</h2>
-                    </div>
-                    
-                    <div class="relative max-w-4xl mx-auto">
-                        <!-- Vertical Line -->
-                        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-theme border-theme z-0 hidden md:block"></div>
-                        
-                        <div class="space-y-12">
-                            <!-- Milestone 1 -->
-                            <div class="flex flex-col md:flex-row items-center justify-between w-full relative z-10">
-                                <div class="w-full md:w-5/12 text-center md:text-right md:pr-8 mb-4 md:mb-0">
-                                    <h3 class="text-2xl font-serif text-heading-theme">The Foundation</h3>
-                                    <p class="text-body-theme mt-2 text-sm">Founded in Geneva, bridging the gap between local flower farms and floral connoisseurs.</p>
-                                </div>
-                                <div class="w-12 h-12 rounded-full bg-card-theme border-2 border-secondary flex items-center justify-center font-bold text-secondary text-sm z-10 shrink-0 mx-auto md:mx-0 shadow-lg mb-4 md:mb-0">
-                                    1995
-                                </div>
-                                <div class="w-full md:w-5/12 text-left md:pl-8 hidden md:block"><img src="assets/images/premium/bloom_col1.jpg" alt="1995 Foundation" class="w-full h-48 object-cover border border-secondary/30 shadow-2xl"></div>
-                            </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-16">
+                        <div class="w-full lg:w-1/2">
+                            <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Our Philosophy</span>
+                            <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-8">Farm to Boutique</h2>
+                            <p class="text-body-theme text-lg leading-relaxed mb-6 font-light">
+                                We believe that true luxury begins at the source. Our commitment to excellence drives us to partner exclusively with sustainable, family-owned farms across the globe, ensuring that every stem we select meets our uncompromising standards.
+                            </p>
+                            <p class="text-body-theme text-lg leading-relaxed mb-8 font-light">
+                                From the moment a flower is delicately hand-picked at dawn to its final placement in one of our bespoke arrangements, we maintain strict temperature control and hydration protocols. This meticulous care guarantees that our blooms arrive at your door in their most vibrant, pristine state.
+                            </p>
                             
-                            <!-- Milestone 2 -->
-                            <div class="flex flex-col md:flex-row items-center justify-between w-full relative z-10">
-                                <div class="w-full md:w-5/12 text-right md:pr-8 hidden md:block"><img src="assets/images/premium/bloom_col1.jpg" alt="2008 Expansion" class="w-full h-48 object-cover border border-secondary/30 shadow-2xl"></div>
-                                <div class="w-12 h-12 rounded-full bg-card-theme border-2 border-secondary flex items-center justify-center font-bold text-secondary text-sm z-10 shrink-0 mx-auto md:mx-0 shadow-lg mb-4 md:mb-0">
-                                    2008
+                            <div class="grid grid-cols-2 gap-8 mt-12 border-t border-theme pt-8">
+                                <div>
+                                    <h4 class="font-serif text-2xl text-secondary mb-2">100%</h4>
+                                    <p class="text-sm text-heading-theme uppercase tracking-widest font-bold">Sustainable</p>
                                 </div>
-                                <div class="w-full md:w-5/12 text-center md:text-left md:pl-8">
-                                    <h3 class="text-2xl font-serif text-heading-theme">Global Expansion</h3>
-                                    <p class="text-body-theme mt-2 text-sm">Opening our flagship boutiques in New York, Paris, and Tokyo.</p>
-                                </div>
-                            </div>
-
-                            <!-- Milestone 3 -->
-                            <div class="flex flex-col md:flex-row items-center justify-between w-full relative z-10">
-                                <div class="w-full md:w-5/12 text-center md:text-right md:pr-8 mb-4 md:mb-0">
-                                    <h3 class="text-2xl font-serif text-heading-theme">The Diamond Vault</h3>
-                                    <p class="text-body-theme mt-2 text-sm">Launch of our exclusive bespoke floral arrangement division.</p>
-                                </div>
-                                <div class="w-12 h-12 rounded-full bg-card-theme border-2 border-secondary flex items-center justify-center font-bold text-secondary text-sm z-10 shrink-0 mx-auto md:mx-0 shadow-lg mb-4 md:mb-0">
-                                    2015
-                                </div>
-                                <div class="w-full md:w-5/12 text-left md:pl-8 hidden md:block"><img src="assets/images/premium/bloom_hero.jpg" alt="2015 Vault" class="w-full h-48 object-cover border border-secondary/30 shadow-2xl"></div>
-                            </div>
-                            
-                            <!-- Milestone 4 -->
-                            <div class="flex flex-col md:flex-row items-center justify-between w-full relative z-10">
-                                <div class="w-full md:w-5/12 text-right md:pr-8 hidden md:block"><img src="assets/images/premium/bloom_col2.jpg" alt="2026 Future" class="w-full h-48 object-cover border border-secondary/30 shadow-2xl"></div>
-                                <div class="w-12 h-12 rounded-full bg-secondary border-2 border-secondary flex items-center justify-center font-bold text-black text-sm z-10 shrink-0 mx-auto md:mx-0 shadow-lg mb-4 md:mb-0">
-                                    2026
-                                </div>
-                                <div class="w-full md:w-5/12 text-center md:text-left md:pl-8">
-                                    <h3 class="text-2xl font-serif text-heading-theme">A Digital Legacy</h3>
-                                    <p class="text-body-theme mt-2 text-sm">Pioneering the digital luxury space with virtual consultations and authentication.</p>
+                                <div>
+                                    <h4 class="font-serif text-2xl text-secondary mb-2">48h</h4>
+                                    <p class="text-sm text-heading-theme uppercase tracking-widest font-bold">Farm to Door</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 relative group">
+                            <div class="absolute -inset-4 bg-secondary/10 transform -rotate-2 transition-transform group-hover:rotate-0 duration-500 rounded-2xl"></div>
+                            <img src="assets/images/farm_to_boutique.jpg" alt="Farm to Boutique Sourcing" class="relative z-10 w-full h-[600px] object-cover hover:scale-[1.02] transition-all duration-700 shadow-2xl rounded-2xl border border-secondary/30">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 5️⃣ Master Artisans -->
-            <section class="py-24 bg-theme-alt">
-                <div class="container mx-auto px-4 lg:px-8">
-                    <div class="text-center mb-16">
-                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Visionaries</span>
-                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Our Master Artisans</h2>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <!-- Artisan 1 -->
-                        <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden mb-6 h-96">
-                                <img src="assets/images/bloom_col3.jpg" alt="Master Florist" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-                                <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-4 text-white justify-center">
-                                    <a href="#" class="hover:text-secondary"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" class="hover:text-secondary"><i class="fab fa-twitter"></i></a>
+            <!-- 5️⃣ The Art of Floristry -->
+            <section class="py-24 bg-theme-alt relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+                <div class="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                        <div class="w-full lg:w-1/2">
+                            <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Visionaries</span>
+                            <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-8">The Art of Floristry</h2>
+                            <p class="text-body-theme text-lg leading-relaxed mb-6 font-light">
+                                Our master artisans are more than florists; they are visionaries who sculpt with nature. With decades of combined experience, they meticulously craft each arrangement as a unique masterpiece, weaving tradition with modern aesthetics.
+                            </p>
+                            <p class="text-body-theme text-lg leading-relaxed mb-8 font-light">
+                                Every stem is analyzed for structure and color, trimmed with absolute precision, and placed with intention. Whether it is an intimate bespoke design or a grand event installation, our artisans pour their soul into translating your emotions into breathtaking floral art.
+                            </p>
+                            
+                            <div class="grid grid-cols-2 gap-8 mt-12 border-t border-theme pt-8">
+                                <div>
+                                    <h4 class="font-serif text-2xl text-secondary mb-2">20+</h4>
+                                    <p class="text-sm text-heading-theme uppercase tracking-widest font-bold">Years of Mastery</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-2xl text-secondary mb-2">5,000+</h4>
+                                    <p class="text-sm text-heading-theme uppercase tracking-widest font-bold">Bespoke Designs</p>
                                 </div>
                             </div>
-                            <h3 class="font-serif text-xl text-heading-theme text-center">Arthur V.</h3>
-                            <p class="text-secondary text-xs uppercase tracking-widest text-center mt-1">Chief Florist</p>
                         </div>
-                        
-                        <!-- Artisan 2 -->
-                        <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden mb-6 h-96">
-                                <img src="assets/images/premium/bloom_col1.jpg" alt="Lead Botanist" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-                                <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-4 text-white justify-center">
-                                    <a href="#" class="hover:text-secondary"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="font-serif text-xl text-heading-theme text-center">Elena R.</h3>
-                            <p class="text-secondary text-xs uppercase tracking-widest text-center mt-1">Lead Botanist</p>
-                        </div>
-
-                        <!-- Artisan 3 -->
-                        <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden mb-6 h-96">
-                                <img src="assets/images/bloom_bespoke.jpg" alt="Bespoke Designer" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-                                <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-4 text-white justify-center">
-                                    <a href="#" class="hover:text-secondary"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="font-serif text-xl text-heading-theme text-center">Julian K.</h3>
-                            <p class="text-secondary text-xs uppercase tracking-widest text-center mt-1">Bespoke Designer</p>
-                        </div>
-
-                        <!-- Artisan 4 -->
-                        <div class="group cursor-pointer">
-                            <div class="relative overflow-hidden mb-6 h-96">
-                                <img src="assets/images/bloom_masterpiece.jpg" alt="Authentication Expert" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-                                <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-4 text-white justify-center">
-                                    <a href="#" class="hover:text-secondary"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="font-serif text-xl text-heading-theme text-center">Sarah W.</h3>
-                            <p class="text-secondary text-xs uppercase tracking-widest text-center mt-1">Authentication Expert</p>
+                        <div class="w-full lg:w-1/2 relative group">
+                            <div class="absolute -inset-4 bg-secondary/10 transform rotate-2 transition-transform group-hover:rotate-0 duration-500 rounded-2xl"></div>
+                            <img src="assets/images/art_of_floristry.jpg" alt="Master Artisan Crafting" class="relative z-10 w-full h-[600px] object-cover hover:scale-[1.02] transition-all duration-700 shadow-2xl rounded-2xl border border-secondary/30">
                         </div>
                     </div>
                 </div>
@@ -744,4 +686,5 @@
     </script>
 </body>
 </html>
+
 

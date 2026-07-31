@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Bloom Product Details - Discover the intricacies, technical specifications, and heritage of our flagship masterpieces.">
-    <title>Product Details | Bloom</title>
+    <meta name="description" content="Bloom Seasonal Edit - Discover our vibrant, handcrafted arrangements designed to celebrate life's most precious moments with the freshest blooms of the season.">
+    <title>Seasonal | Bloom</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -126,7 +126,7 @@
         }
         
         .nav-link:hover { color: var(--text-heading); }
-        .nav-link.active { color: var(--text-heading); font-weight: 700; }
+        .nav-link.active { color: #EC4899 !important; font-weight: 700; }
         
         /* Dropdowns */
         .dropdown { position: relative; }
@@ -317,225 +317,118 @@
         </div>
 
         <main class="w-full flex-grow pt-[72px] lg:pt-[100px]">
-            
-            <!-- Breadcrumbs -->
-            <div class="container mx-auto px-4 lg:px-8 py-4">
-                <nav class="text-xs font-medium uppercase tracking-widest text-body-theme flex items-center gap-2">
-                    <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
-                    <i class="fas fa-chevron-right text-[10px]"></i>
-                    <a href="Bouquets.html" class="hover:text-secondary transition-colors">Bouquets</a>
-                    <i class="fas fa-chevron-right text-[10px]"></i>
-                    <span class="text-secondary font-bold">The Royal Chronograph</span>
-                </nav>
-            </div>
-
-            <!-- 1️⃣ Product Showcase / Hero -->
-            <section class="py-12 bg-theme-main">
-                <div class="container mx-auto px-4 lg:px-8">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-                        
-                        <!-- Image Gallery (Left) -->
-                        <div class="w-full flex flex-col gap-4 sticky top-24">
-                            <!-- Main Image -->
-                            <div class="w-full h-[500px] md:h-[650px] bg-accent border border-theme flex items-center justify-center overflow-hidden p-8 relative">
-                                <div class="absolute top-6 left-6 bg-secondary text-black text-[10px] uppercase font-bold tracking-widest px-3 py-1 z-10">Limited Edition</div>
-                                <img id="main-product-image" src="assets/images/premium/jewellery_product_1.png" alt="The Royal Chronograph" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700 cursor-zoom-in">
-                            </div>
-                            
-                            <!-- Thumbnails -->
-                            <div class="grid grid-cols-4 gap-4">
-                                <div class="h-24 bg-accent border border-theme cursor-pointer thumbnail active" onclick="changeImage(this, 'assets/images/img-54.jpg')">
-                                    <img src="assets/images/img-2.jpg" class="w-full h-full object-cover">
-                                </div>
-                                <div class="h-24 bg-accent border border-theme cursor-pointer thumbnail" onclick="changeImage(this, 'assets/images/img-56.jpg')">
-                                    <img src="assets/images/img-10.jpg" class="w-full h-full object-cover">
-                                </div>
-                                <div class="h-24 bg-accent border border-theme cursor-pointer thumbnail" onclick="changeImage(this, 'assets/images/img-58.jpg')">
-                                    <img src="assets/images/premium/service_hero.png" class="w-full h-full object-cover">
-                                </div>
-                                <div class="h-24 bg-accent border border-theme cursor-pointer thumbnail" onclick="changeImage(this, 'assets/images/img-60.jpg')">
-                                    <img src="assets/images/img-35.jpg" class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Product Details (Right) -->
-                        <div class="w-full flex flex-col pt-4 lg:pt-0">
-                            <h1 class="text-4xl md:text-5xl font-serif text-heading-theme mb-2">The Royal Chronograph</h1>
-                            <p class="text-xs font-bold uppercase tracking-widest text-body-theme mb-6">SKU: LXT-8924-RG</p>
-                            
-                            <div class="text-3xl font-serif text-secondary mb-8">$42,500</div>
-                            
-                            <p class="text-body-theme text-lg leading-relaxed mb-8">
-                                A masterpiece of horological engineering. The Royal Chronograph in 18k Rose Gold merges avant-garde skeletonization with absolute precision. Designed for the modern visionary, it reveals the beating heart of its meticulously hand-finished caliber.
-                            </p>
-                            
-                            <!-- Case Size Selector -->
-                            <div class="mb-8 border-b border-theme pb-8">
-                                <p class="text-sm font-bold uppercase tracking-widest text-heading-theme mb-4">Case Size</p>
-                                <div class="flex gap-4">
-                                    <button class="w-16 h-12 border border-secondary text-secondary font-bold text-sm flex items-center justify-center transition-all bg-secondary/10">42mm</button>
-                                    <button class="w-16 h-12 border border-theme text-body-theme hover:border-secondary hover:text-secondary font-medium text-sm flex items-center justify-center transition-all bg-transparent">44mm</button>
-                                </div>
-                            </div>
-                            
-                            <!-- Actions -->
-                            <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                                <button class="w-full sm:w-2/3 bg-secondary text-black py-5 font-bold uppercase tracking-widest text-xs hover:bg-heading-theme hover:text-bg-theme transition-colors shadow-lg border border-secondary flex items-center justify-center gap-3">
-                                    <i class="fas fa-shopping-bag"></i> Add to Cart
-                                </button>
-                                <button class="w-full sm:w-1/3 bg-transparent text-heading-theme py-5 font-bold uppercase tracking-widest text-xs border border-theme hover:border-secondary hover:text-secondary transition-colors flex items-center justify-center gap-3">
-                                    <i class="far fa-heart text-lg"></i> Save
-                                </button>
-                            </div>
-                            
-                            <div class="w-full border border-theme p-6 bg-card-theme mb-8">
-                                <h4 class="font-serif text-heading-theme mb-2 flex items-center gap-3"><i class="fas fa-concierge-bell text-secondary"></i> Private Viewing</h4>
-                                <p class="text-sm text-body-theme mb-4">Experience this piece in person at one of our global boutiques.</p>
-                                <a href="contact.html" class="text-xs font-bold uppercase tracking-widest text-secondary hover:underline">Book an Appointment</a>
-                            </div>
-                            
-                            <!-- Accordions -->
-                            <div class="border-t border-theme">
-                                <button class="w-full flex items-center justify-between py-5 text-heading-theme font-serif text-lg border-b border-theme text-left hover:text-secondary transition-colors">
-                                    Delivery & Returns <i class="fas fa-plus text-sm"></i>
-                                </button>
-                                <button class="w-full flex items-center justify-between py-5 text-heading-theme font-serif text-lg border-b border-theme text-left hover:text-secondary transition-colors">
-                                    Warranty & Care <i class="fas fa-plus text-sm"></i>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
+            <!-- 1. Hero Section -->
+            <section class="relative h-screen flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 w-full h-full z-0">
+                    <img src="assets/images/premium/bloom_greenhouse_bg.jpg" alt="Seasonal Flowers" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-black/40 z-10"></div>
                 </div>
-            </section>
-            
-            <!-- 2️⃣ The Art of Detail (Features) -->
-            <section class="py-24 bg-theme-alt border-y border-theme">
-                <div class="container mx-auto px-4 lg:px-8">
-                    <div class="flex flex-col items-center text-center w-full mb-16">
-                        <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Exquisite Craftsmanship</span>
-                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">The Art of Detail</h2>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg-card-theme p-10 border border-theme hover-card text-center group">
-                            <i class="fas fa-cogs text-4xl text-secondary mb-6 transform group-hover:rotate-90 transition-transform duration-700"></i>
-                            <h3 class="text-xl font-serif text-heading-theme mb-4">In-House Movement</h3>
-                            <p class="text-body-theme text-sm leading-relaxed">
-                                The Caliber LX-800 features an automatic winding mechanism, column wheel chronograph, and a 72-hour power reserve, entirely developed and assembled by our master horologists.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-card-theme p-10 border border-theme hover-card text-center group">
-                            <i class="fas fa-seedling text-4xl text-secondary mb-6 transform group-hover:scale-110 transition-transform duration-500"></i>
-                            <h3 class="text-xl font-serif text-heading-theme mb-4">18k Rose Gold Case</h3>
-                            <p class="text-body-theme text-sm leading-relaxed">
-                                Forged from our proprietary rose gold alloy, designed to retain its deep, warm luster indefinitely without fading, meticulously polished by hand.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-card-theme p-10 border border-theme hover-card text-center group">
-                            <i class="fas fa-shield-alt text-4xl text-secondary mb-6 transform group-hover:-translate-y-2 transition-transform duration-500"></i>
-                            <h3 class="text-xl font-serif text-heading-theme mb-4">Sapphire Crystal</h3>
-                            <p class="text-body-theme text-sm leading-relaxed">
-                                Both the dial and the exhibition caseback are protected by domed, scratch-resistant sapphire crystal treated with an anti-reflective coating on both sides.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 3️⃣ Heritage & Inspiration -->
-            <section class="py-32 bg-black relative flex items-center justify-center overflow-hidden">
-                <div class="absolute inset-0 z-0">
-                    <img src="assets/images/img-70.jpg" alt="Watch Mechanism macro" class="w-full h-full object-cover opacity-30 bg-fixed">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/80"></div>
-                </div>
-                
-                <div class="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-                    <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-6 block text-xs">The Origin Story</span>
-                    <h2 class="text-4xl md:text-6xl font-serif text-white mb-8">Inspired by the Stars</h2>
-                    <p class="text-gray-300 text-lg md:text-xl font-light leading-relaxed mb-10">
-                        The Royal Chronograph was conceived as an homage to the pioneers of early astronomy. The skeletonized dial mimics the complex astrolabes used by ancient navigators, while the rose gold elements capture the hue of a celestial dawn. It is a bridge between the heavens and horology.
+                <div class="container mx-auto px-4 relative z-20 text-center flex flex-col items-center animate-fadeInUp">
+                    <span class="text-secondary font-bold tracking-[0.3em] uppercase mb-4 block text-sm bg-white/10 px-4 py-1 backdrop-blur-sm rounded-full">Explore Freshness</span>
+                    <h1 class="text-4xl md:text-6xl font-serif text-white mb-6 drop-shadow-lg">
+                        The <span class="text-secondary italic">Seasonal</span> Edit
+                    </h1>
+                    <p class="text-lg text-gray-100 font-light max-w-2xl drop-shadow-md">
+                        Discover our vibrant, handcrafted arrangements designed to celebrate life's most precious moments with the freshest blooms of the season.
                     </p>
-                    <div class="w-px h-24 bg-secondary mx-auto"></div>
                 </div>
             </section>
 
-            <!-- 4️⃣ Technical Specifications -->
+            <!-- 2️⃣ Seasonal Philosophy -->
             <section class="py-24 bg-theme-main border-y border-theme">
                 <div class="container mx-auto px-4 lg:px-8">
-                    <div class="flex flex-col lg:flex-row gap-16">
-                        <div class="w-full lg:w-1/3">
-                            <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Blueprint</span>
-                            <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-6">Technical Data</h2>
+                    <div class="flex flex-col lg:flex-row gap-16 items-center">
+                        <div class="w-full lg:w-1/2">
+                            <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Nature's Rhythm</span>
+                            <h2 class="text-3xl md:text-5xl font-serif text-heading-theme mb-6">Seasonal Philosophy</h2>
                             <p class="text-body-theme mb-8 leading-relaxed">
-                                Every microscopic component is engineered for absolute precision and durability, meeting the highest standards of the Swiss chronometer testing institute.
+                                Our seasonal collections are deeply inspired by the changing rhythms of nature. We source only what is currently blooming at its absolute peak, ensuring every arrangement captures the true essence of the moment.
                             </p>
-                            <a href="#" class="text-xs font-bold uppercase tracking-widest text-secondary hover:underline">Download PDF Manual</a>
-                        </div>
-                        
-                        <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0 text-sm">
-                            <!-- Col 1 -->
-                            <div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Reference</span>
-                                    <span class="text-body-theme text-right">LXT-8924-RG</span>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0 text-sm w-full">
+                                <div>
+                                    <div class="py-4 border-b border-theme flex justify-between">
+                                        <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Sourcing</span>
+                                        <span class="text-body-theme text-right">Local Farms</span>
+                                    </div>
+                                    <div class="py-4 border-b border-theme flex justify-between">
+                                        <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Freshness</span>
+                                        <span class="text-body-theme text-right">24-Hour Cut</span>
+                                    </div>
                                 </div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Movement</span>
-                                    <span class="text-body-theme text-right">Automatic Caliber LX-800</span>
-                                </div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Power Reserve</span>
-                                    <span class="text-body-theme text-right">Approx. 72 Hours</span>
-                                </div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Frequency</span>
-                                    <span class="text-body-theme text-right">28,800 vph (4 Hz)</span>
-                                </div>
-                                <div class="py-4 border-b border-theme md:border-b-0 flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Jewels</span>
-                                    <span class="text-body-theme text-right">37 Rubies</span>
+                                <div>
+                                    <div class="py-4 border-b border-theme flex justify-between">
+                                        <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Eco-Footprint</span>
+                                        <span class="text-body-theme text-right">Carbon Neutral</span>
+                                    </div>
+                                    <div class="py-4 border-b border-theme flex justify-between">
+                                        <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Design</span>
+                                        <span class="text-body-theme text-right">Bespoke Curation</span>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            <!-- Col 2 -->
-                            <div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Case Material</span>
-                                    <span class="text-body-theme text-right">18k Rose Gold</span>
-                                </div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Diameter</span>
-                                    <span class="text-body-theme text-right">42.0 mm</span>
-                                </div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Thickness</span>
-                                    <span class="text-body-theme text-right">13.5 mm</span>
-                                </div>
-                                <div class="py-4 border-b border-theme flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Water Resistance</span>
-                                    <span class="text-body-theme text-right">10 Bar (100 meters)</span>
-                                </div>
-                                <div class="py-4 border-b-0 flex justify-between">
-                                    <span class="font-bold text-heading-theme uppercase tracking-wider text-xs">Strap</span>
-                                    <span class="text-body-theme text-right">Alligator Leather (Black)</span>
-                                </div>
+                        </div>
+                        
+                        <!-- Added Image to this section per user request -->
+                        <div class="w-full lg:w-1/2 h-[500px]">
+                            <img src="assets/images/art_of_floristry.jpg" alt="Seasonal Philosophy" class="w-full h-full object-cover shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3️⃣ Upcoming Season Pre-Orders -->
+            <section class="py-32 relative flex items-center justify-center overflow-hidden border-y border-theme">
+                <div class="absolute inset-0 z-0">
+                    <img src="assets/images/floral_hero.jpg" alt="Upcoming Season Background" class="w-full h-full object-cover opacity-30">
+                    <div class="absolute inset-0 bg-black/70"></div>
+                </div>
+                
+                <div class="container mx-auto px-4 lg:px-8 relative z-10 flex flex-col items-center text-center">
+                    <span class="text-secondary font-bold tracking-[0.3em] uppercase mb-4 block text-xs">Sneak Peek</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">Upcoming Season Pre-Orders</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto mb-12 text-lg font-light leading-relaxed">
+                        Reserve our highly anticipated upcoming seasonal blooms before they are available to the public. Limited harvest quantities ensure exclusivity.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
+                        <!-- Teaser 1 -->
+                        <div class="group relative h-80 overflow-hidden cursor-pointer">
+                            <img src="assets/images/bouquet_grid_2.jpg" alt="Spring Collection" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+                            <div class="absolute bottom-6 left-6 text-left">
+                                <h3 class="text-xl font-serif text-white mb-1">Spring Awakening</h3>
+                                <p class="text-secondary text-xs uppercase tracking-widest font-bold">Reserve Now</p>
+                            </div>
+                        </div>
+                        <!-- Teaser 2 -->
+                        <div class="group relative h-80 overflow-hidden cursor-pointer">
+                            <img src="assets/images/bouquet_grid_4.jpg" alt="Summer Collection" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+                            <div class="absolute bottom-6 left-6 text-left">
+                                <h3 class="text-xl font-serif text-white mb-1">Summer Solstice</h3>
+                                <p class="text-secondary text-xs uppercase tracking-widest font-bold">Reserve Now</p>
+                            </div>
+                        </div>
+                        <!-- Teaser 3 -->
+                        <div class="group relative h-80 overflow-hidden cursor-pointer">
+                            <img src="assets/images/sig_eternal_love.jpg" alt="Autumn Collection" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+                            <div class="absolute bottom-6 left-6 text-left">
+                                <h3 class="text-xl font-serif text-white mb-1">Autumn Harvest</h3>
+                                <p class="text-secondary text-xs uppercase tracking-widest font-bold">Reserve Now</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 5️⃣ Client Reviews -->
+            <!-- 4️⃣ Client Reviews -->
             <section class="py-24 bg-theme-alt relative overflow-hidden">
                 <div class="absolute right-0 top-0 text-[200px] text-secondary opacity-5 select-none pointer-events-none font-serif">"</div>
                 <div class="container mx-auto px-4 lg:px-8 relative z-10">
                     <div class="flex flex-col items-center text-center w-full mb-16">
                         <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">The Verdict</span>
-                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Owner Reviews</h2>
+                        <h2 class="text-3xl md:text-5xl font-serif text-heading-theme">Client Reviews</h2>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -545,11 +438,11 @@
                             </div>
                             <h4 class="font-serif text-heading-theme font-bold mb-2">Exceeds Expectations</h4>
                             <p class="text-body-theme italic mb-6 leading-relaxed text-sm">
-                                "The weight of the rose gold paired with the mesmerizing movement of the skeleton dial makes this the crown jewel of my collection. The craftsmanship is flawless."
+                                "The vibrant colors of the spring tulips paired with the mesmerizing arrangement made this the centerpiece of my event. The freshness is flawless."
                             </p>
                             <div class="mt-auto border-t border-theme pt-4">
                                 <h4 class="font-sans text-xs font-bold text-heading-theme uppercase tracking-widest">James W.</h4>
-                                <span class="text-xs text-secondary">Verified Collector</span>
+                                <span class="text-xs text-secondary">Verified Client</span>
                             </div>
                         </div>
                         
@@ -559,11 +452,11 @@
                             </div>
                             <h4 class="font-serif text-heading-theme font-bold mb-2">A True Masterpiece</h4>
                             <p class="text-body-theme italic mb-6 leading-relaxed text-sm">
-                                "Photographs do not do it justice. The way the light catches the angles of the case and the sapphire crystal is stunning. The power reserve is also incredibly reliable."
+                                "Photographs do not do it justice. The way the light catches the dew on the petals is stunning. The longevity of the blooms is also incredibly reliable."
                             </p>
                             <div class="mt-auto border-t border-theme pt-4">
                                 <h4 class="font-sans text-xs font-bold text-heading-theme uppercase tracking-widest">Alexander T.</h4>
-                                <span class="text-xs text-secondary">Verified Collector</span>
+                                <span class="text-xs text-secondary">Verified Client</span>
                             </div>
                         </div>
 
@@ -571,26 +464,26 @@
                             <div class="flex text-secondary text-sm mb-4">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
-                            <h4 class="font-serif text-heading-theme font-bold mb-2">Worth the Waitlist</h4>
+                            <h4 class="font-serif text-heading-theme font-bold mb-2">Worth Every Penny</h4>
                             <p class="text-body-theme italic mb-6 leading-relaxed text-sm">
-                                "I waited 8 months for this piece to become available, and it was absolutely worth it. The chronograph pushers feel incredibly crisp and mechanical."
+                                "I pre-ordered the seasonal summer collection, and it was absolutely worth it. The fragrant scent fills my entire home."
                             </p>
                             <div class="mt-auto border-t border-theme pt-4">
                                 <h4 class="font-sans text-xs font-bold text-heading-theme uppercase tracking-widest">Marcus B.</h4>
-                                <span class="text-xs text-secondary">Verified Collector</span>
+                                <span class="text-xs text-secondary">Verified Client</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 6️⃣ Related Masterpieces -->
+            <!-- 5️⃣ Seasonal Selections -->
             <section class="py-24 bg-theme-main border-y border-theme">
                 <div class="container mx-auto px-4 lg:px-8">
                     <div class="flex justify-between items-end mb-12">
                         <div>
                             <span class="text-secondary font-bold tracking-[0.2em] uppercase mb-2 block text-xs">Curated For You</span>
-                            <h2 class="text-3xl md:text-4xl font-serif text-heading-theme">You May Also Like</h2>
+                            <h2 class="text-3xl md:text-4xl font-serif text-heading-theme">Seasonal Selections</h2>
                         </div>
                     </div>
 
@@ -599,17 +492,17 @@
                         <!-- Product 1 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-64 bg-accent overflow-hidden p-4 flex items-center justify-center">
-                                <img src="assets/images/img-7.jpg" alt="Dress Watch" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/bouquet_grid_3.jpg" alt="Tulip Arrangement" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-base text-heading-theme mb-1">Elegance Ultra-Thin</h3>
-                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">White Gold</p>
+                                    <h3 class="font-serif text-base text-heading-theme mb-1">Morning Dew</h3>
+                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">Spring Collection</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4 text-sm">$18,900</p>
-                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Discover</a>
+                                    <p class="text-secondary font-bold mb-4 text-sm">$125</p>
+                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -617,17 +510,17 @@
                         <!-- Product 2 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-64 bg-accent overflow-hidden p-4 flex items-center justify-center">
-                                <img src="assets/images/img-67.jpg" alt="Pilot Watch" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/sig_grandeur.jpg" alt="Sunflower Bouquet" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-base text-heading-theme mb-1">Aero Commander</h3>
-                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">Liliesium</p>
+                                    <h3 class="font-serif text-base text-heading-theme mb-1">Golden Hour</h3>
+                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">Summer Collection</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4 text-sm">$14,500</p>
-                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Discover</a>
+                                    <p class="text-secondary font-bold mb-4 text-sm">$145</p>
+                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -635,17 +528,17 @@
                         <!-- Product 3 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-64 bg-accent overflow-hidden p-4 flex items-center justify-center">
-                                <img src="assets/images/img-61.jpg" alt="Dive Watch" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/sig_minimalist.jpg" alt="Rustic Arrangement" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-base text-heading-theme mb-1">Ocean Master 300</h3>
-                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">Stainless Steel</p>
+                                    <h3 class="font-serif text-base text-heading-theme mb-1">Amber Glow</h3>
+                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">Autumn Collection</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4 text-sm">$10,200</p>
-                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Discover</a>
+                                    <p class="text-secondary font-bold mb-4 text-sm">$160</p>
+                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -653,17 +546,17 @@
                         <!-- Product 4 -->
                         <div class="bg-card-theme border border-theme group hover-card flex flex-col h-full">
                             <div class="relative h-64 bg-accent overflow-hidden p-4 flex items-center justify-center">
-                                <img src="assets/images/premium/bloom_col1.jpg" alt="Vintage Watch" class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-700">
+                                <img src="assets/images/premium/bloom_bespoke.jpg" alt="White Rose Bouquet" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                                 <div class="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors"></div>
                             </div>
                             <div class="p-6 text-center flex-grow flex flex-col justify-between">
                                 <div>
-                                    <h3 class="font-serif text-base text-heading-theme mb-1">Heritage 1965</h3>
-                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">Yellow Gold (Vintage)</p>
+                                    <h3 class="font-serif text-base text-heading-theme mb-1">Winter Frost</h3>
+                                    <p class="text-[10px] text-body-theme uppercase tracking-widest mb-3">Winter Collection</p>
                                 </div>
                                 <div>
-                                    <p class="text-secondary font-bold mb-4 text-sm">$28,000</p>
-                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Discover</a>
+                                    <p class="text-secondary font-bold mb-4 text-sm">$185</p>
+                                    <a href="#" class="inline-block w-full text-xs font-bold uppercase tracking-wider text-heading-theme hover:text-secondary transition-colors">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -684,7 +577,7 @@
                             <div class="text-2xl font-serif font-bold text-white tracking-wider uppercase">Bloom</div>
                         </a>
                         <p class="text-gray-400 mb-6 text-sm leading-relaxed font-light">
-                            Fresh & Beautiful, Crafted for Every Moment. Purveyors of fine watches and exquisite jewelry since 1995.
+                            Fresh & Beautiful, Crafted for Every Moment. Purveyors of fine luxury floral arrangements and bouquets since 1995.
                         </p>
                         <div class="flex space-x-4">
                             <a href="#" class="w-10 h-10 border border-secondary/50 text-secondary flex items-center justify-center hover:bg-secondary hover:text-black transition-all"><i class="fab fa-instagram"></i></a>
@@ -708,7 +601,7 @@
                         <ul class="space-y-3 text-sm font-light">
                             <li><a href="contact.html" class="text-gray-400 hover:text-secondary transition-colors">Contact Us</a></li>
                             <li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Shipping & Returns</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Watch Servicing</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Floral Care</a></li>
                             <li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">FAQ</a></li>
                         </ul>
                     </div>
@@ -860,3 +753,4 @@
     </script>
 </body>
 </html>
+
