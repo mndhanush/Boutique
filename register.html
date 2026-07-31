@@ -116,12 +116,12 @@
 
     <!-- Top Right Utilities -->
     <div class="absolute top-4 end-4 flex items-center gap-3 z-50">
-        <button type="button" class="rtl-toggle-btn utility-btn text-[10px] uppercase tracking-widest font-bold" title="Toggle RTL">
-            RTL
+        <button type="button" class="theme-toggle w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-color)] transition-all duration-300 hover:bg-secondary hover:text-white shrink-0 border border-theme cursor-pointer" title="Toggle Theme">
+            <i class="fas fa-moon hidden dark:inline-block"></i>
+            <i class="fas fa-sun dark:hidden"></i>
         </button>
-        <button type="button" class="theme-toggle utility-btn" title="Toggle Theme">
-            <i class="fas fa-moon text-sm hidden dark:inline-block"></i>
-            <i class="fas fa-sun text-sm dark:hidden"></i>
+        <button type="button" class="rtl-toggle-btn w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-color)] transition-all duration-300 hover:bg-secondary hover:text-white shrink-0 border border-theme cursor-pointer" title="Toggle RTL">
+            <i class="fas fa-exchange-alt"></i>
         </button>
     </div>
     
